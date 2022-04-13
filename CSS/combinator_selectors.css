@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+}
+
+.child1{
+    flex: 1;
+}
+.child2{
+    flex: 10;
+}
+
+.child2 ul{
+    display: flex;
+}
+
+.child2 li{
+    flex: 1;
+}
+
+.child2 li:hover{
+    background-color: indigo;
+    cursor: pointer;
+}
