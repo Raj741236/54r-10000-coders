@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Element Selectors</title>
+        <style>
+            span::before{
+               content: "Hi";
+            }
+            span::after{
+               content: "Hi";
+            }
+            input::placeholder{
+                color: green;
+            }
+            [type = "text"]{
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>I am heading tag</h1>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, magni? Aspernatur rem minus libero. Distinctio veniam repellendus quibusdam, vitae odit doloribus quam praesentium? Facere aut temporibus ea assumenda ipsam nulla sequi quam doloribus! Cum quaerat vero neque possimus voluptate aperiam ipsam error quibusdam praesentium numquam quo, repellendus ex dolor necessitatibus?</span>
+        <input type="text" placeholder="Enter the name"/>
+    </body>
+</html>
