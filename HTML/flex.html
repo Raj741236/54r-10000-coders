@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex properties in css</title>
+    <style>
+        .flex-container{
+           
+            background-color: yellow;
+            padding: 30px;
+            display: flex;
+        }
+        .child{
+            background-color: red;
+            font-size: 20px;
+            margin: 20px;
+            width: 150px;
+            min-height: 250px;
+        }
+        .child1{
+            min-height: 150px;
+            flex-shrink: 0; 
+        }
+        .child2{
+            min-height: 200px;
+           
+        }
+        .child3{
+            min-height: 250px;
+            
+        }
+        div{
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="child child1">Child1</div>
+        <div class="child child2">Child2</div>
+        <div class="child child3">Child3</div>
+
+
+    </div>
+</body>
+</html>
