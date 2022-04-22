@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in css</title>
+    <style>
+        .position{
+            position: relative;
+            background-color: aqua;
+            padding: 10px;
+            height: 1000px;
+        }
+        .relative{
+            position: relative;
+            background-color:lightgreen;
+            height: 100px;
+            text-align: center;
+            z-index: 1000;
+            
+        }
+        .absolute{
+            position: absolute;
+            background-color: lightskyblue;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            top: 0;
+            right: 0;
+            z-index: 1001;
+        }
+        .fixed{
+            position: fixed;
+            width: 100px;
+            background-color: red;
+            height: 100px;
+            text-align: center;
+            top: 0;
+        }
+        .sticky{
+            position: sticky;
+            background-color: black;
+            color: white;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="position">
+        <div class="relative">Relative</div>
+        <div class="absolute">absolute</div>
+        <div class="fixed">fixed</div>
+        <div class="sticky">sticky</div>
+    </div>
+</body>
+</html>

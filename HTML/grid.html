@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid properties in css</title>
+    <style>
+      .parent{
+          height: 500px;
+          background-color: aqua;
+          padding: 10px;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          
+          
+      }
+      .child{
+          background-color: yellow;
+          text-align: center;
+          
+          font-size: 30px;
+          border: 3px solid white;
+      }
+       
+      .child1{
+        
+          /* grid-column-start: 1;
+          grid-column-end: 2; */
+          grid-column: span 1;
+      }
+      .child2{
+        
+       grid-column: span 2;
+      }
+      .child3{
+        grid-column-start: 1;
+          grid-column-end: 4;
+      }
+      .child4{
+        grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 3;
+          grid-row-end: 5;
+      }
+      .child5{
+        grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 3;
+          grid-row-end: 5;
+      }
+      .child6{
+        grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 3;
+          grid-row-end: 5;
+      }
+
+      .child7{
+        grid-column-start: 1;
+          grid-column-end: 4;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child1">Logo</div>
+        <div class="child child2">Nav</div>
+        <div class="child child3">Banner</div>
+        <div class="child child4">Content 1</div>
+        <div class="child child5">Content 2</div>
+        <div class="child child6">Content 3</div>
+        <div class="child child7">Footer</div>
+    </div>
+</body>
+</html>

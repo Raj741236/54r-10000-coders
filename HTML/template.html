@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        .header{
+            display: flex;
+            background-color: #ffffff;
+        }
+        .logo{
+            flex-grow: 1;
+            text-align: center;
+        }
+        .nav{
+            flex-grow: 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-list{
+            display: flex;
+            flex-grow: 1;
+        }
+        .nav-list li{
+            flex-grow: 1;
+            list-style-type: none;
+        }
+
+        .banner{
+           background-color: lightpink;
+        }
+
+         .banner-row1{
+             display: flex;
+             padding: 50px;
+             justify-content: center;
+             align-items: center;
+         }
+         .banner-row1 img{
+             width: 400px;
+             height: 400px;
+
+         }
+         .banner-row1-col1,.banner-row1-col2{
+             flex: 1;
+             text-align: center;
+         }
+         .banner-row1-col2{
+             font-size: 50px;
+             font-family: sans-serif;
+         }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <section class="logo">
+              <img src="https://www.10000coders.co/assets/10000coders-logo.png?v=1.0" alt="10000coders_logo">
+        </section>
+        <nav class="nav">
+           <ul class="nav-list">
+               <li>Home</li>
+               <li>About</li>
+               <li>Portfolio</li>
+               <li>Blog</li>
+               <li>Contact</li>
+           </ul>
+        </nav>
+    </header>
+    <section class="banner">
+         <section class="banner-row1">
+             <section class="banner-row1-col1">
+                 <img src="https://images.unsplash.com/photo-1584473457409-ae5c91d7d8b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"/>
+             </section>
+             <section class="banner-row1-col2">
+                 <h2>Always Things will happen when you listen to your consumer</h2>
+             </section>
+         </section>
+         <section></section>
+    </section>
+</body>
+</html>
