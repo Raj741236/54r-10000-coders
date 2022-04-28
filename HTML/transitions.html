@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in css</title>
+</head>
+<style>
+    .transform{
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 2s;
+        transition-property: transform;
+        transition-timing-function: linear;
+        transition-delay: 3s;
+
+    }
+
+    .transform:hover{
+        background-color: turquoise;
+        transform: rotate(45deg);
+    }
+
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: turquoise;
+        border: 30px solid black;
+    }
+    .ease:hover{
+        width: 300px;
+    }
+    .container > div:hover~div{
+        width: 300px;
+    }
+    .ease{
+        transition-timing-function: ease;
+        transition-duration: 2s;
+    }
+    .linear{
+        transition-timing-function: linear;
+        transition-duration: 2s;
+    }
+    .ease-in{
+        transition-timing-function: ease-in;
+        transition-duration: 2s;
+    }
+    .ease-out{
+        transition-timing-function: ease-out;
+        transition-duration: 2s;
+    }
+    .ease-in-out{
+        transition-timing-function: ease-in-out;
+        transition-duration: 2s;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box ease">ease</div>
+        <div class="box ease-in">ease-in</div>
+        <div class="box linear">linear</div>
+        <div class="box ease-out">ease-out</div>
+        <div class="box ease-in-out">ease-in-out</div>
+    </div>
+</body>
+</html>
