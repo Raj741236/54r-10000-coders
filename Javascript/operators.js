@@ -33,3 +33,5 @@ console.log(Boolean(undefined));
 console.log(Boolean({}));
 console.log(Boolean('raj'));
 
+console.log(--x);
+
