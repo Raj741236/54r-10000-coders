@@ -1,3 +1,5 @@
+// 'use strict';
+
 const users = [
   {
     id: 1,
@@ -261,6 +263,7 @@ const users = [
 // }
 
 const table = document.getElementById("table");
+
 let dynamichtml = ` <thead>
 <tr>
   <th>ID</th>
@@ -286,7 +289,7 @@ for (let i = 0; i <= users.length; i++) {
 }
 table.innerHTML = dynamichtml;
 
-//How to create elemnts in javascript
+// How to create elemnts in javascript
 
 // let body = document.body;
 
@@ -303,16 +306,21 @@ table.innerHTML = dynamichtml;
 
 //strict mode
 
-// "Use Strict";
 
-// var driversLicense = false;
 
-// var testPassed = true;
+var driversLicense = false;
 
-// if(testPassed){
-//     driverLicense = true;
-// }
+var testPassed = true;
 
-// if(driversLicense){
-//     console.log('Dl is issued');
-// }
+if(testPassed){
+    driversLicense = true;
+}
+
+if(driversLicense){
+    console.log('Dl is issued');
+}
+
+
+const interface = 'auto';
+
+console.dir(document);
