@@ -11,11 +11,13 @@
     <div class="container right-panel-active">
         <!-- Sign Up -->
         <div class="container__form container--signup">
-            <form action="#" class="form" id="form1" method="get">
-                <div><a href="https://www.10000coders.co/" target="_blank"><img src="https://www.10000coders.co/assets/10000coders-logo.png?v=1.0" alt="10000coderlogo"></a></div>
-                <input type="text" placeholder="User" name="name" class="input" required minlength="3" maxlength="12" pattern=/[a-z]/g/>
-                <input type="email" placeholder="Email" name="email" class="input" required/>
-                <input type="password" placeholder="Password" name="password" class="input" required/>
+            <form action="#" class="form" id="form1" method="get" novalidate> 
+                <div><img src="https://www.10000coders.co/assets/10000coders-logo.png?v=1.0" alt="10000coderlogo"></div>
+                <input type="text" placeholder="User" name="name" class="input" id="username">
+                <span id="nameerr"></span>
+                <input type="email" placeholder="Email" name="email" class="input" id="email"/>
+                <span id="emailerr"></span>
+                <input type="password" placeholder="Password" name="password" class="input" />
                 <button class="btn">Sign Up</button>
             </form>
         </div>
