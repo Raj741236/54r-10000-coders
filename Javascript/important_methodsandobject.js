@@ -47,13 +47,13 @@
 // alert('pop up')
 // }, 3000);
 
-const countDisplay = document.getElementById('count');
+// const countDisplay = document.getElementById('count');
 
-let count = 0;
+// let count = 0;
 
-setInterval(function(){
-    if(count < 1000){
-    count++;
-    countDisplay.innerHTML = count;
-    }
-},1);
+// setInterval(function(){
+//     if(count < 1000){
+//     count++;
+//     countDisplay.innerHTML = count;
+//     }
+// },1);
