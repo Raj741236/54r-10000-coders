@@ -70,29 +70,29 @@
 
 
 
-let product = {
-    name: "Iphone",
-    model: 13,
-    description:
-      "The iPhone 13 models come in 5.4 and 6.1-inch sizes, with the 5.4-inch iPhone 13 Pro positioned as Apple's smallest iPhone",
-    price: 100000,
-    details:function(){
-        return `<h1>${this.name} ${this.model}</h1>
-                <p>${this.description}</p>
-                <button>Add to Cart</button
-        `
-    },
-    gstCalc  : function(gstPercent){
-        return this.price+((this.price * gstPercent)/ 100)
-    }
-  };
+// let product = {
+//     name: "Iphone",
+//     model: 13,
+//     description:
+//       "The iPhone 13 models come in 5.4 and 6.1-inch sizes, with the 5.4-inch iPhone 13 Pro positioned as Apple's smallest iPhone",
+//     price: 100000,
+//     details:function(){
+//         return `<h1>${this.name} ${this.model}</h1>
+//                 <p>${this.description}</p>
+//                 <button>Add to Cart</button
+//         `
+//     },
+//     gstCalc  : function(gstPercent){
+//         return this.price+((this.price * gstPercent)/ 100)
+//     }
+//   };
 // console.log(description)
-  const result = product.details();
+//   const result = product.details();
 
-document.body.innerHTML = result
+// document.body.innerHTML = result
 
-  console.log(product.details())
-  console.log(product.gstCalc(10));
+//   console.log(product.details())
+//   console.log(product.gstCalc(10));
 
 
   //POP vs OOP
@@ -107,6 +107,11 @@ document.body.innerHTML = result
 // Hiding information from the outer world
 
 //polymorphism
-console.log(20 + 30);
+//An ability to do multiple task
+// console.log(20 + 30);
 
-console.log('20' + 30);
+// console.log('20' + 30);
+
+//Inheritance
+
+//Acquring properties and methods fromparent to child class
